@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>super hero team</title>
 
+  <h1>Team Name: <%= @team_name%></h2> <br>
+  <h2>Team Motto: <%= @team_motto%></h2> <br>
+  <% @heroes.each do |details|%> <br>
+  <h3>Hero Name: <%= details[:name]%></h3> 
+  <p>Hero Power: <%= details[:power]%></p> 
+  <p>Hero Biography: <%= details[:bio]%></p>
+  <% end%>
 
-
+</head>
